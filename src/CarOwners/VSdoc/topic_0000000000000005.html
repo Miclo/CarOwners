@@ -3,7 +3,7 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="GENERATOR" content="VSdocman - documentation generator; http://www.helixoft.com" />
-	<title>Startup Class</title>
+	<title>Startup.Configure Method</title>
 
 	<link rel="stylesheet" type="text/css" href="msdn10_lightweight/msdn10_lightweight.css"></link>
 	<script src="msdn10_lightweight/msdn10_lightweight.js" type="text/javascript"></script>
@@ -59,9 +59,8 @@ function replaceTitleAndUrl(win, title, url) {
 <!--HEADER START-->
   <div id="header">
   	<div id="runningHeaderText">CarOwners Reference</div>
-  	<h1 class="title">Startup Class</h1>
+  	<h1 class="title">Startup.Configure Method</h1>
   	<div id="headerLinks">
-<a href="topic_0000000000000003_members--.html">Members</a>
 
 	<a href="#seeAlsoSection">See Also</a>
 
@@ -74,7 +73,7 @@ function replaceTitleAndUrl(win, title, url) {
       <div id="mainBody">
         <p />
        
-        The web part starts here
+        This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
 
 
         <p /><strong>Namespace:</strong>
@@ -83,7 +82,7 @@ function replaceTitleAndUrl(win, title, url) {
 
 
 
-        <br /><strong>Assembly:</strong> ProvincePlaatsen (in )
+        <br /><strong>Assembly:</strong> CarOwners (in )
 
 
 
@@ -133,7 +132,7 @@ function replaceTitleAndUrl(win, title, url) {
 				</div>
 				
 				<div class="codeSnippetCode codeVB">
-					<pre xml:space="preserve" class="brush: vb">Public Class Startup</pre>			
+					<pre xml:space="preserve" class="brush: vb">Public Sub Configure( _&nbsp;<br />   ByVal <i>app</i> As <a target="_top" href="http://msdn2.microsoft.com/en-us/library/microsoft.aspnetcore.builder.iapplicationbuilder.aspx">IApplicationBuilder</a>, _&nbsp;<br />   ByVal <i>env</i> As <a target="_top" href="http://msdn2.microsoft.com/en-us/library/microsoft.aspnetcore.hosting.ihostingenvironment.aspx">IHostingEnvironment</a>, _&nbsp;<br />   ByVal <i>loggerFactory</i> As <a target="_top" href="http://msdn2.microsoft.com/en-us/library/microsoft.extensions.logging.iloggerfactory.aspx">ILoggerFactory</a> _&nbsp;<br />)</pre>			
 				</div>
 				<div class="codeSnippetCode codeNA">
 					<pre xml:space="preserve">This language is not supported or no code example is available.</pre>			
@@ -169,7 +168,7 @@ function replaceTitleAndUrl(win, title, url) {
 				</div>
 				
 				<div class="codeSnippetCode codeCsharp">
-					<pre xml:space="preserve" class="brush: csharp">public class Startup</pre>			
+					<pre xml:space="preserve" class="brush: csharp">public <a target="_top" href="http://msdn2.microsoft.com/en-us/library/system.void.aspx">void</a> Configure(&nbsp;<br />   <a target="_top" href="http://msdn2.microsoft.com/en-us/library/microsoft.aspnetcore.builder.iapplicationbuilder.aspx">IApplicationBuilder</a> <i>app</i>,&nbsp;<br />   <a target="_top" href="http://msdn2.microsoft.com/en-us/library/microsoft.aspnetcore.hosting.ihostingenvironment.aspx">IHostingEnvironment</a> <i>env</i>,&nbsp;<br />   <a target="_top" href="http://msdn2.microsoft.com/en-us/library/microsoft.extensions.logging.iloggerfactory.aspx">ILoggerFactory</a> <i>loggerFactory</i>&nbsp;<br />)</pre>			
 				</div>
 				<div class="codeSnippetCode codeNA">
 					<pre xml:space="preserve">This language is not supported or no code example is available.</pre>			
@@ -205,7 +204,7 @@ function replaceTitleAndUrl(win, title, url) {
 				</div>
 				
 				<div class="codeSnippetCode codeCpp">
-					<pre xml:space="preserve" class="brush: cpp">public ref class Startup </pre>			
+					<pre xml:space="preserve" class="brush: cpp">public: &nbsp;<br /><a target="_top" href="http://msdn2.microsoft.com/en-us/library/system.void.aspx">void</a> Configure(&nbsp;<br />   <a target="_top" href="http://msdn2.microsoft.com/en-us/library/microsoft.aspnetcore.builder.iapplicationbuilder.aspx">IApplicationBuilder</a>^ <i>app</i>,&nbsp;<br />   <a target="_top" href="http://msdn2.microsoft.com/en-us/library/microsoft.aspnetcore.hosting.ihostingenvironment.aspx">IHostingEnvironment</a>^ <i>env</i>,&nbsp;<br />   <a target="_top" href="http://msdn2.microsoft.com/en-us/library/microsoft.extensions.logging.iloggerfactory.aspx">ILoggerFactory</a>^ <i>loggerFactory</i>&nbsp;<br />) </pre>			
 				</div>
 				<div class="codeSnippetCode codeNA">
 					<pre xml:space="preserve">This language is not supported or no code example is available.</pre>			
@@ -241,7 +240,7 @@ function replaceTitleAndUrl(win, title, url) {
 				</div>
 				
 				<div class="codeSnippetCode codeJScript">
-					<pre xml:space="preserve" class="brush: js">public class Startup</pre>			
+					<pre xml:space="preserve" class="brush: js">public function Configure(&nbsp;<br />    <i>app</i> : <a target="_top" href="http://msdn2.microsoft.com/en-us/library/microsoft.aspnetcore.builder.iapplicationbuilder.aspx">IApplicationBuilder</a>,&nbsp;<br />    <i>env</i> : <a target="_top" href="http://msdn2.microsoft.com/en-us/library/microsoft.aspnetcore.hosting.ihostingenvironment.aspx">IHostingEnvironment</a>,&nbsp;<br />    <i>loggerFactory</i> : <a target="_top" href="http://msdn2.microsoft.com/en-us/library/microsoft.extensions.logging.iloggerfactory.aspx">ILoggerFactory</a>&nbsp;<br />);</pre>			
 				</div>
 				<div class="codeSnippetCode codeNA">
 					<pre xml:space="preserve">This language is not supported or no code example is available.</pre>			
@@ -252,6 +251,55 @@ function replaceTitleAndUrl(win, title, url) {
 	</div>
 
 
+<h4 class="subHeading">
+	Parameters</h4><dl paramName="app">
+	<dt>
+		<span class="parameter">
+			app
+		</span>
+	</dt>
+	<dd>
+		<p>
+			Type: <a target="_top" href="http://msdn2.microsoft.com/en-us/library/microsoft.aspnetcore.builder.iapplicationbuilder.aspx">IApplicationBuilder</a> 
+		</p>
+		<p>
+			 
+		</p>
+	</dd>
+</dl>
+<dl paramName="env">
+	<dt>
+		<span class="parameter">
+			env
+		</span>
+	</dt>
+	<dd>
+		<p>
+			Type: <a target="_top" href="http://msdn2.microsoft.com/en-us/library/microsoft.aspnetcore.hosting.ihostingenvironment.aspx">IHostingEnvironment</a> 
+		</p>
+		<p>
+			 
+		</p>
+	</dd>
+</dl>
+<dl paramName="loggerFactory">
+	<dt>
+		<span class="parameter">
+			loggerFactory
+		</span>
+	</dt>
+	<dd>
+		<p>
+			Type: <a target="_top" href="http://msdn2.microsoft.com/en-us/library/microsoft.extensions.logging.iloggerfactory.aspx">ILoggerFactory</a> 
+		</p>
+		<p>
+			 
+		</p>
+	</dd>
+</dl>
+
+<p />
+<p />
 
 
 
@@ -268,10 +316,6 @@ function replaceTitleAndUrl(win, title, url) {
 
 	</div>
 </div>
-
-
-
-
 
 
 
@@ -280,22 +324,57 @@ function replaceTitleAndUrl(win, title, url) {
 
 <div class="section_container">
 	<div class="section_heading">
-		<span><a href="javascript:void(0)" title="Collapse" onclick="toggleSection(this);">Inheritance Hierarchy</a></span>
+		<span><a href="javascript:void(0)" title="Collapse" onclick="toggleSection(this);">Remarks</a></span>
 		<div><hr /></div>
 	</div>
 
-<div id="inheritanceHierarchySection" class="section">
-
-<div style="padding-left:0em;"><a target="_top" href="http://msdn2.microsoft.com/en-us/library/system.object.aspx">System.Object</a>
-</div>
-
-
-
-<div style="padding-left:1em;">CarOwners.Startup</div>
-
+	<div id="remarksSection" class="section">	
+			&lt;remark&gt;
+		&lt;ID&gt;LM-01&lt;/ID&gt;
+		&lt;date&gt;2016-12-17&lt;/date&gt;
+		&lt;texts&gt;
+			&lt;text&gt;This method is/handles the middelware pipeline&lt;/text&gt;
+		&lt;/texts&gt;
+		&lt;link&gt;
+			&lt;title&gt;5. (ASP.NET Core 1.0 &amp; MVC) Understanding Middleware&lt;/title&gt;
+			&lt;url&gt;https://youtu.be/mLbHhCppCH0?t=5s)&lt;/url&gt;
+		&lt;/link&gt;
+					<div class="codeSnippetCodeCollection">
+				<div class="codeSnippetToolbar">
+					<a title="Copy to clipboard." href="javascript:void(0)" onclick="CopyCode(this);">Copy</a>
+				</div>
 				
+				<div class="codeSnippetCode">
+					<pre xml:space="preserve">					</pre>			
+				</div>
+			</div>
+	&lt;/remark&gt;
+	&lt;remark&gt;
+		&lt;ID&gt;LM-03&lt;/ID&gt;
+		&lt;date&gt;2017-12-17&lt;/date&gt;
+		&lt;texts&gt;
+			&lt;text&gt;Add MVC to Middleware Pipeline&lt;/text&gt;
+		&lt;/texts&gt;
+		&lt;link&gt;
+			&lt;title&gt;6. (ASP.NET Core 1.0 and MVC) Adding MVC To Our Project&lt;/title&gt;
+			&lt;url&gt;https://www.youtube.com/watch?v=3xgjB2dzUng&amp;feature=youtu.be&amp;t=7m16s&lt;/url&gt;
+		&lt;/link&gt;
+					<div class="codeSnippetCodeCollection">
+				<div class="codeSnippetToolbar">
+					<a title="Copy to clipboard." href="javascript:void(0)" onclick="CopyCode(this);">Copy</a>
+				</div>
+				
+				<div class="codeSnippetCode">
+					<pre xml:space="preserve">app.UseMvc(routes =&gt;...					</pre>			
+				</div>
+			</div>
+	&lt;/remark&gt;
+	</div>					
 </div>
-</div>
+
+
+
+
 
 
 
@@ -360,7 +439,6 @@ function replaceTitleAndUrl(win, title, url) {
 	</div>					
 </div>
 
-
 <div class="section_container">
 	<div class="section_heading">
 		<span><a href="javascript:void(0)" title="Collapse" onclick="toggleSection(this);">See Also</a></span>
@@ -371,11 +449,15 @@ function replaceTitleAndUrl(win, title, url) {
 		<div>
 			<h4 class="subHeading">
 				Reference</h4>
-			<a href="topic_0000000000000003_members--.html">Startup Members</a><br />
-	<a href="topic_0000000000000000.html">CarOwners Namespace</a><br />
+			<a href="topic_0000000000000003.html">Startup Class</a><br />
+<a href="topic_0000000000000003_members--.html">Startup Members</a><br />
 
 
-	
+
+<a href="topic_0000000000000000.html">CarOwners Namespace</a><br />
+
+
+			
 
 		</div>
 	</div>					
