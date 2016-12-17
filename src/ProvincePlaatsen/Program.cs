@@ -7,8 +7,15 @@ using Microsoft.AspNetCore.Hosting;
 
 namespace ProvincePlaatsen
 {
+    /// <summary>
+    /// Start Class
+    /// </summary>
     public class Program
     {
+        /// <summary>
+        /// The program starts here
+        /// </summary>
+        /// <param name="args"></param>
         public static void Main(string[] args)
         {
             var host = new WebHostBuilder()
