@@ -18,17 +18,19 @@ namespace ProvincePlaatsen
         /// <summary>
         /// This method gets called by the runtime. Use this method to add services to the container.
         /// For more information on how to configure your application, visit http://go.microsoft.com/fwlink/?LinkID=398940
+        /// <remarks>
+        /// LM-02:   Add MVC services to project
+        ///          6. (ASP.NET Core 1.0 and MVC) Adding MVC To Our Project
+        ///          https://www.youtube.com/watch?v=3xgjB2dzUng&amp;feature=youtu.be&amp;t=6m16s
+        /// </remarks>
         /// </summary>
         /// <param name="services"></param>
         public void ConfigureServices(IServiceCollection services)
         {
-            /// <summary>
-            /// LM-02:   Add MVC services to project
-            ///          6. (ASP.NET Core 1.0 and MVC) Adding MVC To Our Project
-            ///          https://www.youtube.com/watch?v=3xgjB2dzUng&amp;feature=youtu.be&amp;t=6m16s
-            /// </summary>
+
             services.AddMvcCore();
         }
+
 
         /// <summary>
         /// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -36,6 +38,15 @@ namespace ProvincePlaatsen
         /// LM-01:   This method is/handles the middelware pipeline 
         ///          5. (ASP.NET Core 1.0 &amp; MVC) Understanding Middleware 
         ///          https://youtu.be/mLbHhCppCH0?t=5s)    
+        /// </remarks>
+        /// <remarks>
+        /// LM-03:   Add MVC to Middleware Pipeline
+        ///          6. (ASP.NET Core 1.0 and MVC) Adding MVC To Our Project
+        ///          https://www.youtube.com/watch?v=3xgjB2dzUng&amp;feature=youtu.be&amp;t=7m16s
+        ///          In the above video an older version is used. The code below is copied from a new ASP.NET core project
+        ///          <code>
+        ///             app.UseMvc(...
+        ///          </code>
         /// </remarks>
         /// </summary>
         /// <param name="app"></param>
@@ -49,13 +60,7 @@ namespace ProvincePlaatsen
             {
                 app.UseDeveloperExceptionPage();
             }
-            
 
-
-            // LM-03:   Add MVC to Middleware Pipeline
-            //          6. (ASP.NET Core 1.0 and MVC) Adding MVC To Our Project
-            //          https://www.youtube.com/watch?v=3xgjB2dzUng&feature=youtu.be&t=7m16s
-            //          In the above video an older version is used. The code below is copied from a new ASP.NET core project
             app.UseMvc(routes =>
             {
                 routes.MapRoute(

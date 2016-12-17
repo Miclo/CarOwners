@@ -1,31 +1,28 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.IO;
 using Microsoft.AspNetCore.Hosting;
 
 namespace ProvincePlaatsen
 {
-    /// <summary>
-    /// Start Class
-    /// </summary>
-    public class Program
-    {
-        /// <summary>
-        /// The program starts here
-        /// </summary>
-        /// <param name="args"></param>
-        public static void Main(string[] args)
-        {
-            var host = new WebHostBuilder()
-                .UseKestrel()
-                .UseContentRoot(Directory.GetCurrentDirectory())
-                .UseIISIntegration()
-                .UseStartup<Startup>()
-                .Build();
+	/// <summary>
+	/// Start Class
+	/// </summary>
+	public class Program
+	{
 
-            host.Run();
-        }
-    }
+		/// <summary>
+		/// The program starts 
+		/// </summary>
+		/// <param name="args"></param>
+		public static void Main(string[] args)
+		{
+			var host = new WebHostBuilder()
+				.UseKestrel()
+				.UseContentRoot(Directory.GetCurrentDirectory())
+				.UseIISIntegration()
+				.UseStartup<Startup>()
+				.Build();
+
+			host.Run();
+		}
+	}
 }
