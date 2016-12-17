@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<DynamicHelp xmlns="http://msdn.microsoft.com/vsdata/xsd/vsdh.xsd" xmlns:xsi="http://www.w3.org/2000/10/XMLSchema-instance" xsi:schemaLocation="http://msdn.microsoft.com/vsdata/xsd/vsdh.xsd">	
+   <LINKGROUP ID="CarOwners" Title="CarOwners Reference Help" Priority="2100">
+      <GLYPH Expanded="vs:/ctxhelp_show.gif" Collapsed="vs:/ctxhelp_hide.gif"/>
+   </LINKGROUP>
+
+
+   <Context>
+      <Keywords>
+         <KItem Name="CarOwners" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:CarOwners.chm::/topic_0000000000000000.html" LinkGroup="CarOwners">CarOwners Namespace</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="CarOwners Reference" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:CarOwners.chm::/topic_0000000000000006.html" LinkGroup="CarOwners">CarOwners Reference</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="CarOwners.Startup.Configure" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:CarOwners.chm::/topic_0000000000000005.html" LinkGroup="CarOwners">Configure Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="CarOwners.Startup.ConfigureServices" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:CarOwners.chm::/topic_0000000000000004.html" LinkGroup="CarOwners">ConfigureServices Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="CarOwners.Program.Main" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:CarOwners.chm::/topic_0000000000000002.html" LinkGroup="CarOwners">Main Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="CarOwners.Program" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:CarOwners.chm::/topic_0000000000000001.html" LinkGroup="CarOwners">Program Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="CarOwners.Startup" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:CarOwners.chm::/topic_0000000000000003.html" LinkGroup="CarOwners">Startup Class</LItem>
+      </Links>
+   </Context>
+   
+
+</DynamicHelp>
+
