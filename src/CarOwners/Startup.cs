@@ -11,7 +11,7 @@ using Microsoft.Extensions.Logging;
 namespace CarOwners
 {
 	/// <summary>
-	/// The web part starts here ###############
+	/// The web part starts here 
 	/// </summary>
 	public class Startup
 	{
@@ -26,17 +26,19 @@ namespace CarOwners
 		///			<date>2016-12-17</date>
 		///			<texts>
 		///				<text>Add MVC services to project</text>
+		///				<text>Do NOT use AspMvcCore!!!</text>
 		///			</texts>
 		///			<link>
 		///				<title>6. (ASP.NET Core 1.0 and MVC) Adding MVC To Our Project</title>
 		///				<url>https://www.youtube.com/watch?v=3xgjB2dzUng&amp;feature=youtu.be&amp;t=6m16s</url>
 		///			</link>
+		///			<code>services.AddMvc</code>
 		///		</remark>
 		///	</remarks>
 		public void ConfigureServices(IServiceCollection services)
 		{
-
-			services.AddMvcCore();
+			//
+			services.AddMvc();
 		}
 
 
